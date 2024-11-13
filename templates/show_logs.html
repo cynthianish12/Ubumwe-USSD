@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Logs</title>
+</head>
+<body>
+    <h2>Logs</h2>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log.timestamp }} - {{ log.phone }} - {{ log.request_type }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
